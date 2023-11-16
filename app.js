@@ -39,18 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     fetch(
-      `http://api.exchangerate.host/convert?access_key=${apiKey}&from=${fromCurrency}&to=${toCurrency}&amount=${amount}`
+      `https://v6.exchangerate-api.com/v6/a82c5e16c02f9e819782ab0a/latest/USD?from=${fromCurrency}`
     )
       .then((response) => response.json())
       .then((data) => {
-        const convertedAmount = data.result;
+        const convertedAmount = (data.conversion_rates[toCurrency]*amount).toFixed(4);
         resultElement.textContent = `${convertedAmount}`;
 
         const subtitle1 = document.querySelector(".card-subtitle-1");
         const subtitle2 = document.querySelector(".card-subtitle-2");
 
-        subtitle1.textContent = `1 ${fromCurrency} = ${data.info.quote} ${toCurrency}`;
-        subtitle2.textContent = `1 ${toCurrency} = ${(1/data.info.quote).toFixed(6)} ${fromCurrency}`;
+        subtitle1.textContent = `1 ${fromCurrency} = ${data.conversion_rates[toCurrency]} ${toCurrency}`;
+        subtitle2.textContent = `1 ${toCurrency} = ${(1/data.conversion_rates[toCurrency]).toFixed(4)} ${fromCurrency}`;
       })
       .catch((error) => {
         console.error("Error fetching exchange rates:", error);
