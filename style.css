@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-item .btn {
+  background-color: white;
+  color: #000;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.title {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.process {
+  color: #9f9f9f;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+li {
+  display: inline;
+}
+
+.haveCard {
+  width: 260px;
+  height: 100px;
+  border-color: #e5e5e5;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+
+.card-title {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  margin-top: 15px !important;
+  color: #c6c6c6;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.amount-input{
+  width: 250px;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+
+li .btn:hover{
+  background: #833ae0;
+  color: #fff;
+}

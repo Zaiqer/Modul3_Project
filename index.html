@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/Bank_Logo.svg" alt="bank_img" width="89" height="23">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Bank</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Investments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mobile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn">LOG IN</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h1>Online currency converter</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 have">
+                <p class="process">I have</p>
+                <ul class="haveList">
+                    <li><button class="fromBtn btn">USD</button></li>
+                    <li><button class="fromBtn btn active">RUB</button></li>
+                    <li><button class="fromBtn btn">GBP</button></li>
+                    <li><button class="fromBtn btn">EUR</button></li>
+                    <li><button class="fromBtn btn">AZN</button></li>
+                </ul>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <input class="amount-input" type="number" id="input">
+                        <h6 class="card-subtitle-1 mb-2 text-body-secondary"></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 buy">
+                <p class="process">I want to buy</p>
+                <ul class="buyList">
+                    <li><button class="toBtn btn active">USD</button></li>
+                    <li><button class="toBtn btn">RUB</button></li>
+                    <li><button class="toBtn btn">GBP</button></li>
+                    <li><button class="toBtn btn">EUR</button></li>
+                    <li><button class="toBtn btn">AZN</button></li>
+                </ul>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="result"></h5>
+                        <h6 class="card-subtitle-2 mb-2 text-body-secondary"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
