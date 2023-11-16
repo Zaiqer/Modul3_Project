@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let fromCurrency = "RUB";
   let toCurrency = "USD";
-  const apiKey = "d7d93bf09dc4ccce16eb9730eb1bc983";
 
   const fromButtons = document.querySelectorAll(".fromBtn");
   const toButtons = document.querySelectorAll(".toBtn");
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  amountInput.addEventListener("keyup", convertCurrency);
+  amountInput.addEventListener("input", convertCurrency);
 
   convertCurrency();
 
